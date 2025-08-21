@@ -39,6 +39,10 @@ body {
     color: #fff;
 }
 
+section {
+    margin-top: 150px;
+}
+
 h2 {
     font-size: 50px;
     margin-bottom: 30px;
@@ -97,7 +101,7 @@ nav a {
     bottom: 0;
     width: 100%;
     height: 50%;
-    background: linear-gradient(to top, #111, rgba(1 1 1 / 0));
+    background: linear-gradient(to top, rgb(23 24 32), rgba(23 24 32 / 0));
 }
 
 /* -- Hero Content -- */
@@ -124,7 +128,7 @@ nav a {
     }
 }
 
-/* -- Bouncing Arrow -- */
+/* -- Arrow -- */
 
 .arrow {
     color: #e30022;
@@ -139,3 +143,41 @@ nav a {
     20% { transform: translateY(12px); }
     60% { transform: translateY(12px); }
 }
+
+/* -- About Section --*/
+
+.about-column {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.about-content {
+    width: calc(60% - 10px);
+
+    p {
+        font-size: 20px;
+    }
+
+    p + p {
+        margin-top: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        
+        :hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.about-pic {
+    width: calc(40% - 10px);
+    background: #333 url(../img/handsome.jpg) center center / cover no-repeat;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+/* -- Experience Section -- */
+
