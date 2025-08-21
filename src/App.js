@@ -1,14 +1,14 @@
-import Header from "./components/Header";
-
+import HeroBanner from "./components/HeroBanner";
 function App() {
-
   return (
+    <>
     <main>
-      <Header />
+      <HeroBanner />
       <div className="container">
 
       </div>
     </main>
+    </>
   );
 }
 
