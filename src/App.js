@@ -1,5 +1,6 @@
 import HeroBanner from "./components/HeroBanner";
 import About from "./components/About";
+import Experience from "./components/Experience";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <HeroBanner />
       <div className="container">
         <About />
+        <Experience />
       </div>
     </main>
     </>

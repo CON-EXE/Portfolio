@@ -24,7 +24,7 @@ function About() {
                             Want to know more? <a href="#contact"><span>Get in touch!</span></a>
                         </p>
                     </div>
-                    <div class="about-column about-pic"></div> 
+                    <div className="about-column about-pic"></div> 
                 </div>
             </section>
     );

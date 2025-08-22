@@ -22,6 +22,10 @@
     gap: 20px;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 .left {
     text-align: left;
 }
@@ -181,3 +185,33 @@ nav a {
 
 /* -- Experience Section -- */
 
+.column {
+    height: 250px;
+    border-radius: 10px;
+    background-color: #30303099;
+    background: linear-gradient(to top, #30303050, #40404070);
+    box-shadow: inset 0 1px 0 0 rgb(255 255 255 / 4%), 0 2px 4px rgb(0 0 0 / 10%);
+
+    p {
+        font-weight: 600;
+    }
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+.html { background: url(../img/html.png) center center / cover no-repeat; }
+.css { background: url(../img/css.png) center center / cover no-repeat; }
+.javascript { background: url(../img/js.png) center center / cover no-repeat; }
+.react { background: url(../img/react.png) center center / cover no-repeat; }
+.csharp { background: url(../img/c-sharp.png) center center / cover no-repeat; }
+.java { background: url(../img/java.png) center center / cover no-repeat; }
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 15px;
+}
