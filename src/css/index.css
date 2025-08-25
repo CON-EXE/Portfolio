@@ -218,13 +218,11 @@ nav a {
 
 .row {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
 
 /* -- Contact Section -- */
-
-
 
 .form-container { /* Thanks Andre */
     width: min(100% - 40px, 480px);
@@ -280,4 +278,25 @@ nav a {
 
 .contact-icons a:hover {
     transform: scale(1.2);
+}
+
+/* -- Footer -- */
+
+.footer-overlay {
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top, #16232B, rgb(23 24 32));
+}
+
+.footer-content {
+    height: 100px;
+    background-color: #16232B;
+    line-height: 100px;
+    text-align: center;
+
+    p {
+        font-size: 20px;
+        color: #888;
+        bottom: 0;
+    }
 }
