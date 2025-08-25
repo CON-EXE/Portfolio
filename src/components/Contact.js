@@ -16,7 +16,7 @@ function Contact() {
                     <input type="email" required name="from_email" placeholder="yourname@email.com" className="email"></input>
 
                     <label for="message">Message</label>
-                    <textarea required minlength="10" className="message" placeholder="Leave a message..."></textarea>
+                    <textarea name="form_message" required minlength="10" className="message" placeholder="Leave a message..."></textarea>
 
                     <button type="submit">Send</button>
                 </form>
