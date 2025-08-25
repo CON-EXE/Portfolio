@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://CON-EXE.github.io/portfolio",
+  "homepage": "https://CON-EXE.github.io/Portfolio",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.0.0",
