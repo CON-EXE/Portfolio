@@ -1,4 +1,4 @@
-
+import ContactIcons from "./ContactIcons";
 
 function Contact() {
     return(
@@ -22,7 +22,7 @@ function Contact() {
                 </form>
             </div>
 
-            <p>Heres where to find <span>me</span></p>
+            <ContactIcons/>
         </section>
     );
 }
