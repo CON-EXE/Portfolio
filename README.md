@@ -76,3 +76,5 @@ Hero Banner background from FreePik.com
 Arrow icon from FontAwesome.com
 
 Experience images from Flaticon.com
+
+Contact form made using Web3Forms
