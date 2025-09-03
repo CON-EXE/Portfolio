@@ -76,6 +76,9 @@ header {
     border: 1px solid rgb(202 0 30 / 10%);
     background-color: rgba(51, 51, 51, 0.5);
     line-height: 56px;
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
 
     h1 {
         font-size: 20px;
@@ -87,6 +90,11 @@ header {
         font-size: 17px;
         font-weight: 600;
     }
+
+    button {
+        display: none;
+        background: none;
+    }
 }
 
 nav a {
@@ -97,27 +105,33 @@ nav a {
     margin-left: 10px;
 }
 
+
 /* -- Hero Banner -- */
 
 .hero-banner {
-    height: 100dvh;
+    position: relative;
+    min-height: 100svh;
     background: #333 url(../img/herobanner-temp.jpg) center center / cover no-repeat;
     overflow: hidden;
 }
 
-.overlay {
-    pointer-events: none;
+.hero-banner::before {
+    content: "";
     position: absolute;
     bottom: 0;
-    width: 100%;
-    height: 50%;
-    background: linear-gradient(to top, rgb(23 24 32), rgba(23 24 32 / 0));
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to top, rgb(23 24 32), rgba(23 24 32 / 0) 50%, transparent 100%);
+    z-index: 1;
 }
 
 /* -- Hero Content -- */
 
 .hero-content {
-    height: 100dvh;
+    height: 100svh;
+    position: relative;
+    z-index: 2;
 
     & > div {
         text-align: center;
@@ -298,5 +312,56 @@ nav a {
         font-size: 20px;
         color: #888;
         bottom: 0;
+    }
+}
+
+/* -- Media Queries -- */
+
+@media only screen and (max-width: 600px) {
+    .hero-banner {
+        /* min-height: 100dvh; */
+
+        nav {
+            display: none;
+        }
+    
+        .bars {
+            height: 40px;
+            font-size: 30px;
+            display:block;
+            color: #fff;
+        }
+
+        .hero-content {
+            h2 {
+                font-size: 60px;
+                
+            }
+    
+            p {
+                font-size: 25px;
+            }
+        }
+
+    }
+
+    .about {
+
+    }
+
+    .experience {
+        .row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+    }
+
+    .contact {
+
+    }
+
+    footer {
+        
     }
 }

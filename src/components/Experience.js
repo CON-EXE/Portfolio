@@ -1,6 +1,6 @@
 function Experience() {
     return(
-        <section id ="experience">
+        <section id ="experience" className="experience">
             <h2>My <span>Experience</span></h2>
             <div className="row">
                 <div className="column grid-center">

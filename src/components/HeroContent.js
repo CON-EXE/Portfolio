@@ -3,7 +3,8 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 function HeroContent() {
     return(
-        <div className="hero-content overlay flex grid-center">
+
+        <div className="container hero-content grid-center">
             <div>
                 <p className="left">Hey! I'm</p>
                 <h2><span>Connor Hall</span></h2>

@@ -2,7 +2,7 @@ import ContactIcons from "./ContactIcons";
 
 function Contact() {
     return(
-        <section id="contact" className="align">
+        <section id="contact" className="contact align">
             <h2>Want to get in <span>touch?</span></h2>
             <p>Send me a <span>message</span></p>
             <div className="form-container">
