@@ -3,9 +3,8 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 function HeroContent() {
     return(
-
         <div className="container hero-content grid-center">
-            <div>
+            <div className='hero-text'>
                 <p className="left">Hey! I'm</p>
                 <h2><span>Connor Hall</span></h2>
                 <p className="right">I make things work</p>
