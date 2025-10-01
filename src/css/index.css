@@ -207,7 +207,11 @@ nav a {
     border-radius: 10px;
 }
 
-.about-content {
+.about-content{
+    display: flex;
+}
+
+.about-text {
     width: calc(60% - 10px);
 
     p {
@@ -384,7 +388,23 @@ nav a {
     }
 
     .about {
+        div {
+            display: block;
+        }
 
+        .about-column {
+            height: auto;
+            width: 100%;
+
+        }
+
+        .about-text {
+            margin-bottom: 20px;
+        }
+
+        .about-pic {
+            height: 450px;
+        }
     }
 
     .experience {

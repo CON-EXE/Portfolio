@@ -2,8 +2,8 @@ function About() {
     return(
         <section id="about" className="about">
                 <h2>About <span>Me</span></h2>
-                <div className="gap flex">
-                    <div className="about-column about-content">
+                <div className="gap about-content">
+                    <div className="about-column about-text">
                         <p>
                             I'm an up and coming software developer with a fair bit of 
                             experience using HTML, CSS, and JavaScript. On top of that 
